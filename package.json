@@ -1,6 +1,6 @@
 {
   "name": "dismod",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A powerful package that allows you to create auto moderation events easily! very simple and powerful to use!",
   "main": "index.js",
   "scripts": {
@@ -31,5 +31,9 @@
     "@types/node": "^15.0.2",
     "nodemon": "^2.0.7",
     "typescript": "^4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subhiashraf912/DisMod"
   }
 }
