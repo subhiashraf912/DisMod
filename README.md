@@ -6,6 +6,10 @@ A powerful package that allows you to create auto moderation events easily! very
 
 `npm i --save dismod`
 
+## Github
+
+https://github.com/subhiashraf912/DisMod
+
 ## Example usage
 
 ```js
