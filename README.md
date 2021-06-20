@@ -16,7 +16,24 @@ https://github.com/subhiashraf912/DisMod
 const { Client } = require("discord.js");
 const client = new Client();
 const DisMod = require("dismod");
+
 const autoModerator = new DisMod.Manager(client);
+/*
+OR YOU CAN PASS YOUR OPTIONS
+const autoModerator = new DisMod.Manager(client, {
+  adminCheck: true, // When it's enabled, the the events will be emitted normally when someone has administartor perms.
+
+  bannedWords: ["hentai", "f-words"], // there are default banned words tho, if you want your own/another language, then just put them here
+  
+  botCheck: false, // when it's enabled, the events will be emitted normally on the bots. by default it ignores them.
+
+ignoredUsers:["some id"] //some users to ignore.
+})
+
+THO KEEP IN MIND THAT YOU HAVE YOUR OWN EVENTS, YOU CAN SET THEM UP USING SOMETHING LIKE if (message.member.hasPermission("perms")) or if (message.author.bot)return; ETC
+ALSO YOU CAN CONNECT THEM TO DATABASE AND HAVE SETTINGS FOR EACH GUILD, YOU HAVE A LOT OF OPTIONS! <3 GL WITH YOUR BOT
+
+*/
 
 autoModerator.on("badWordUsage", (message, usedBadWords) => {
   message.channel.send("Don't use bad word");
