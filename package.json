@@ -1,0 +1,35 @@
+{
+  "name": "dismod",
+  "version": "1.0.0",
+  "description": "A powerful package that allows you to create auto moderation events easily! very simple and powerful to use!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src/index.ts",
+    "start": "node ./build/index.js",
+    "build": "tsc"
+  },
+  "keywords": [
+    "discord",
+    "dismod",
+    "discord-mod",
+    "discord-moderator",
+    "auto-moderator",
+    "discord-auto-moderator",
+    "discord moderator",
+    "auto discord moderator"
+  ],
+  "author": "Sobhi#2003 on discord",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "node-ts": "^5.1.1",
+    "tiny-typed-emitter": "^2.0.3",
+    "tsc": "^2.0.3",
+    "typescript": "^4.3.4"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.2",
+    "nodemon": "^2.0.7",
+    "typescript": "^4.2.4"
+  }
+}
