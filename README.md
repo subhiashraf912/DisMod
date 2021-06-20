@@ -16,7 +16,7 @@ https://github.com/subhiashraf912/DisMod
 const { Client } = require("discord.js");
 const client = new Client();
 const DisMod = require("dismod");
-const autoModerator = new DisMod(client);
+const autoModerator = new DisMod.Manager(client);
 
 autoModerator.on("badWordUsage", (message, usedBadWords) => {
   message.channel.send("Don't use bad word");
