@@ -49,6 +49,7 @@ autoModerator.on("repeatedText", (message, repeatedCount) => {
   }
 });
 autoModerator.on("capsCheck", (message, amount) => {
+  //amount is percent, example: 70% of the message are caps.
   if (message.content.length > 5 && amount >= 70) {
     message.channel.send("Don't send to much caps!");
     //warnUserSomeHow()
