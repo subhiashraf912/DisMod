@@ -1,6 +1,6 @@
 {
   "name": "dismod",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A powerful package that allows you to create auto moderation events easily! very simple and powerful to use!",
   "main": "index.js",
   "scripts": {

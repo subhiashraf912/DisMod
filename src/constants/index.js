@@ -41,6 +41,17 @@ exports.symbols = [
     "[",
     "]",
     "|",
+    "َ",
+    "ً",
+    "ُ",
+    "ُ",
+    "ٌ",
+    "ْ",
+    "ٍ",
+    "ِ",
+    "ْ",
+    "~",
+    "َ"
 ];
 exports.defaultOptions = {
     bannedWords: [
