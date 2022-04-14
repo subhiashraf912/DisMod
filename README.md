@@ -1,6 +1,7 @@
 ## About
 
 A powerful package that allows you to create auto moderation events easily! very simple and powerful to use!
+Update 1.1.0: Should work with discord.js version +13
 
 ## Installation
 
@@ -42,9 +43,7 @@ autoModerator.on("badWordUsage", (message, usedBadWords) => {
 });
 autoModerator.on("repeatedText", (message, repeatedCount) => {
   if (repeatedCount > 3) {
-    message.channel.send(
-      `Don't send repated text! (${repeatedCount} repeated messages!)`
-    );
+    message.channel.send(`Don't send repated text! (${repeatedCount} repeated messages!)`);
     //warnUserSomeHow()
   }
 });
@@ -83,8 +82,7 @@ autoModerator.on("serverInvite", (message, invites) => {
   message.delete();
 });
 autoModerator.on("spoilersSpam", (message, spoilersCount) => {
-  if (spoilersCount >= 3)
-    message.channel.send("Don't spam spoilers!" + spoilersCount);
+  if (spoilersCount >= 3) message.channel.send("Don't spam spoilers!" + spoilersCount);
   //warnUserSomeHow()
 });
 
